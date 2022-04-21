@@ -75,6 +75,10 @@ li a:hover:not(.active) {
   /* background-color: #04AA6D; */
 }
 
+.nav-items{
+  color: black;
+}
+
 .input{
   width: 70%;
   height: 90%;
@@ -93,7 +97,7 @@ li a:hover:not(.active) {
 
 .login{
   height: 90%;
-  /* background-color: lightgray; */
+  background-color: lightgray;
 }
 
 .design{

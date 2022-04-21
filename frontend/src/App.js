@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+import {BsSearch} from 'react-icons/bs'
 
 function App() {
   return (
     <div className="App">
     <div className='nav'>
       <ul>
-        <li className='input-div'><input className='input' type='text'/></li>
-        <li><a href='/'>Home </a></li>
-        <li><a href='/'>Courses </a></li>
-        <li><a href='/'>Cart </a></li>
-        <li><a className='login'>Login</a></li>
+        <li className='input-div'><input className='input'  placeholder='Search' type='text'/></li>
+        <li><a href='/' className='nav-items'>Home </a></li>
+        <li><a href='/' className='nav-items'>Courses </a></li>
+        <li className='nav-items-cart'><a href='/'><AiOutlineShoppingCart size='25px' color='black'/> </a></li>
+        <li className='nav-items-login'><a className='login'>Login</a></li>
       </ul>
     </div>
     <div className='design'>
