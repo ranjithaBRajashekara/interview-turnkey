@@ -39,16 +39,15 @@ router.post('/', async function(req, res, next) {
               'kfsjhdisufykcndhfsi',
               refreshTokenOptions
             );
-            res.send({accessToken, refreshToken})
+            return res.send({accessToken, refreshToken})
           } else{
-            res.send("password or email don't match")
+            return res.send("password or email don't match")
           }
         }
-        res.send('user does not exists')
+        return res.send('user does not exists')
       } catch (error) {
         throw error;
       }
-    res.send('respond with a resource');
   });
 
 module.exports = router;

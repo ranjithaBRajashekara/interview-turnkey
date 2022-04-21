@@ -54,10 +54,10 @@ router.post('/', async function(req, res, next) {
       const newUserDbDocument = new UserModel(req.body)
     
       await newUserDbDocument.save();
-      res.send({ accessToken, refreshToken });
+      return res.send({ accessToken, refreshToken });
       } catch (error) {
         console.log(error);
-        res.send(error)
+        return res.send(error)
       }
   });
 
